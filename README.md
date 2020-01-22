@@ -1,1 +1,1 @@
-* Based in https://github.com/dbsheta/kafka-twitter-producer
+* Based on https://github.com/dbsheta/kafka-twitter-producer
