@@ -57,6 +57,7 @@ public class TwitterKafkaProducer implements MyKafkaProducerInterface {
         gson = new Gson();
     }
     
+    @Override
     public void run() {
         client.connect();       
 
