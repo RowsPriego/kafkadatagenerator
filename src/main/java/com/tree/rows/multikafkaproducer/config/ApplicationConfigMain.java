@@ -1,11 +1,11 @@
-package streaming.ingest;
+package com.tree.rows.multikafkaproducer.config;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class ApplicationConfigMain {
+public final class ApplicationConfigMain {
     
     InputStream inputStream;
     final private static String PROPERTIES_FILE_PATH = "config.properties";

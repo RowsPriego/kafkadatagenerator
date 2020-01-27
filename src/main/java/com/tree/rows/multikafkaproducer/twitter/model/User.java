@@ -1,4 +1,4 @@
-package streaming.ingest.model;
+package com.tree.rows.multikafkaproducer.twitter.model;
 
 import com.google.gson.annotations.SerializedName;
 

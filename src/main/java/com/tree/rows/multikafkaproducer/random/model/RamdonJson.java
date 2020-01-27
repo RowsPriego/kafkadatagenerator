@@ -1,4 +1,4 @@
-package streaming.ingest.model;
+package com.tree.rows.multikafkaproducer.random.model;
 
 public class RamdonJson {
 

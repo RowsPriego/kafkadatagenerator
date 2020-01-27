@@ -1,6 +1,9 @@
-package streaming.ingest;
+package com.tree.rows.multikafkaproducer;
 
 import java.io.Serializable;
+
+import com.tree.rows.multikafkaproducer.random.RamdonKafkaProducer;
+import com.tree.rows.multikafkaproducer.twitter.TwitterKafkaProducer;
 
 public class KafkaDataProducerApp implements Serializable {
 
@@ -9,8 +12,10 @@ public class KafkaDataProducerApp implements Serializable {
 
     public static void main(String[] args) throws Exception {
 
-        MyKafkaProducer producer = new MyKafkaProducer();
+        
         System.out.println("Lets produce some data!");
+
+        MyKafkaProducerInterface producer;
 
         if (args.length > 0) {
             String producerType  = args[0];
@@ -21,7 +26,7 @@ public class KafkaDataProducerApp implements Serializable {
             }
             producer.run();  
         } else {
-            System.out.println("[producerType] parameter is mandatory. Please select: random, twitter");
+            System.out.println("[producerType] parameter is mandatory. Please select: random, twitter, file ...");
         }                   
         
                     
